@@ -1,0 +1,1 @@
+This variable has infinte number of values between any two values, which are numerics. For example, The length of a part or the date and time  payment is made.

@@ -1,0 +1,1 @@
+Its a type of varible that it is finite often doesnot have a logical order. For example Gender, material type, and payment method.
