@@ -15,6 +15,12 @@ git commit "Comment"
 git -m push Readme.md
 
 
+git add .
+git commit -q -m "Last Sync : $(date + "%Y-%m-%d %H:%M:%S")"
+git push -q
+here use the autentication token for your username and for password just enter. Thats it !!
+
+
 [[Introduction to GitHub]]
 
 

@@ -19,6 +19,16 @@ Dont makes plans to write, which is equivalent to driving on rails, you cannot c
 The author states that asking your teaching adivce on writing is not the best option, like the paramedics example, where the teaches knowledege could get you 3 out of 5 score where as the expert has a 4 or maybe 5, but to get that level you need to have that teeachers knowledge. which then builds up the intution. 
 The feedback loop are the reason that makes the expert.
 
+Facts that donot have a meaning or understood cannot hold in memory just like the memorising task in the example on rule and year. So asking better questions like could not only incearese our understanding but also facilitate our thinking:
+1. How does this fact fit into my idea of...?
+2. How can this phenomenon be explained by that theorey? 
+3. Are these two ideas complement or contradict each other?
+4. isn't this arguement is similar to that one?
+5. Haven't i heard this before?
+6. And above all: What does x mean for y?
+
+
+
 
 
 
