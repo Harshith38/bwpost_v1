@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "aa7f92a8cb4e47a9",
+        "id": "969a81cf8b002eb7",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325
+    "width": 248
   },
   "right": {
     "id": "5c50db5be2bdb2d4",
@@ -96,19 +96,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 215
   },
-  "active": "aa7f92a8cb4e47a9",
+  "active": "969a81cf8b002eb7",
   "lastOpenFiles": [
     "Fleeting Notes/Introduction to GitHub.md",
-    "Fleeting Notes/fake experience.md",
-    "Fleeting Notes/Interview AVL.md",
-    "Fleeting Notes/How to take smart notes.md",
-    "categorical.md",
-    "Fleeting Notes/Ds/The Secret to Getting Anything You Want in Life given by Jennifer Cohen.md",
-    "Fleeting Notes/DataScience Literature/Feature Selection Wind Power Forcast.md",
-    "Templates/Core Zettel idea.md",
-    "Fleeting Notes/DataScience Literature/Weather Forcasting Model Using ANN.md",
-    "Fleeting Notes/Ds/Assignment 4 Datascience.md"
+    "Internship/Ansys Scripting Introduction.md",
+    "Internship/Automating Star CCM+ with Java.md",
+    "Internship/Untitled.md",
+    "Udemy/Applied Linux Command line and shell.md",
+    "Podcast/Huberman on muscle Hypotrophy.md",
+    "Fleeting Notes/questions.md",
+    "Read Later websites/11.05.22 Read.md",
+    "Udemy/JavaScript Youtube.md",
+    "Podcast/ElonMusk  LexFriedman.md"
   ]
 }

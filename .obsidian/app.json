@@ -5,5 +5,6 @@
   "newFileFolderPath": "Fleeting Notes",
   "attachmentFolderPath": "Files",
   "foldHeading": true,
-  "foldIndent": true
+  "foldIndent": true,
+  "promptDelete": false
 }
