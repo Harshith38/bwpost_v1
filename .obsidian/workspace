@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248
+    "width": 248,
+    "collapsed": true
   },
   "right": {
     "id": "5c50db5be2bdb2d4",
@@ -96,19 +97,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215
+    "width": 215,
+    "collapsed": true
   },
   "active": "969a81cf8b002eb7",
   "lastOpenFiles": [
     "Fleeting Notes/Introduction to GitHub.md",
+    "Internship/Testing_Git.md",
+    "Fleeting Notes/How to take smart notes.md",
     "Internship/Ansys Scripting Introduction.md",
     "Internship/Automating Star CCM+ with Java.md",
     "Internship/Untitled.md",
     "Udemy/Applied Linux Command line and shell.md",
     "Podcast/Huberman on muscle Hypotrophy.md",
     "Fleeting Notes/questions.md",
-    "Read Later websites/11.05.22 Read.md",
-    "Udemy/JavaScript Youtube.md",
-    "Podcast/ElonMusk  LexFriedman.md"
+    "Read Later websites/11.05.22 Read.md"
   ]
 }
