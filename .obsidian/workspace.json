@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "969a81cf8b002eb7",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Fleeting Notes/Start with why.md",
-            "mode": "source",
-            "source": false
+        "id": "72b86eba32caf4c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20c7d91614dd236a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fleeting Notes/20221101_Hybrid Fem-NN Models.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -53,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 200
   },
   "right": {
     "id": "5c50db5be2bdb2d4",
@@ -69,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fleeting Notes/Start with why.md",
+                "file": "Fleeting Notes/20221101_Hybrid Fem-NN Models.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +107,17 @@
     "width": 215,
     "collapsed": true
   },
-  "active": "969a81cf8b002eb7",
+  "active": "20c7d91614dd236a",
   "lastOpenFiles": [
+    "Templates/Core Zettel idea.md",
+    "Fleeting Notes/20221101_Hybrid Fem-NN Models.md",
+    "Fleeting Notes/Start with why.md",
+    "Fleeting Notes/Untitled 1.md",
     "Fleeting Notes/UltraLearning.md",
     "Fleeting Notes/Things_no_one_else_can_teach_us.md",
     "Fleeting Notes/Introduction to GitHub.md",
     "Udemy/Battery Simulations.md",
     "Internship/Ansys Scripting Introduction.md",
-    "Internship/Automating Star CCM+ with Java.md",
-    "Internship/Interview AVL.md",
-    "Internship/Testing_Git.md",
-    "Internship/Useful_Links.md",
-    "Fleeting Notes/How to take smart notes.md"
+    "Internship/Automating Star CCM+ with Java.md"
   ]
 }
