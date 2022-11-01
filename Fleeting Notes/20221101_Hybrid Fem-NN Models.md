@@ -1,5 +1,5 @@
 by K.Mirusch, Simon 
-{date:2022-11-01}} {{time:22:50}}
+{{date: 2022-11-01}} {{time: 22:50}}
 Status: Reading
 Tags: #MasterThesis/NeuralNetwork
 KeyWords: Data-driven scientific computing, learning unknown physics. FEM, Machine Learning.
