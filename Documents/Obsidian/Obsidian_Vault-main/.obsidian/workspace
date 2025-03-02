@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "4c74a1efb396f822",
+    "type": "split",
+    "children": [
+      {
+        "id": "969a81cf8b002eb7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Fleeting Notes/Introduction to GitHub.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13f7d929c0f19e2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a96faf170c609079",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff11725ca90a803c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c8a3b1790d17c2cb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 248
+  },
+  "right": {
+    "id": "5c50db5be2bdb2d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "d92e30f44cb6dd47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "894722853c6fc957",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Fleeting Notes/Introduction to GitHub.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "0734e59fcd65debd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 215,
+    "collapsed": true
+  },
+  "active": "969a81cf8b002eb7",
+  "lastOpenFiles": [
+    "Fleeting Notes/Introduction to GitHub.md",
+    "Udemy/Battery Simulations.md",
+    "Internship/Ansys Scripting Introduction.md",
+    "Internship/Automating Star CCM+ with Java.md",
+    "Internship/Interview AVL.md",
+    "Internship/Testing_Git.md",
+    "Internship/Useful_Links.md",
+    "Fleeting Notes/How to take smart notes.md",
+    "Internship/Untitled.md",
+    "Udemy/Applied Linux Command line and shell.md"
+  ]
+}
