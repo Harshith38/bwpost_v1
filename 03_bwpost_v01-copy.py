@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import pandas as pd
-
 import os
+import platform
+from datetime import datetime
 
 
 
@@ -80,9 +81,14 @@ class TrennkarteErstellen:
 
         self.content4 = ttk.Frame(self.content1)
         #content4 = ttk.LabelFrame(root, text="info")
-        self.destop_name = ttk.Label(self.content4, text="name of destop", font=(self.font_name, 10), background="white")
-        self.date_time = ttk.Label(self.content4, text="current time", font=(self.font_name, 10))
-        self.last_update = ttk.Label(self.content4, text="Letztes Update: ",  font=(self.font_name, 10))
+        self.destop_name = ttk.Label(self.content4, text="name of destop", font=(self.font_name, 9), background="white", wraplength=100)
+        self.destop_name.config(text=platform.node())
+
+        self.date_time = ttk.Label(self.content4, text="current time", font=(self.font_name, 9))
+        current_time = datetime.now()
+        self.date_time.config(text=current_time.strftime("%d.%m.%Y \n%H:%M:%S"))
+
+        self.last_update = ttk.Label(self.content4, text="Letztes Update: ",  font=(self.font_name, 9))
 
         self.content1.grid(column=0, row=0, padx=20, pady=20)#, sticky=(N, E))
         self.kunde_einlesen.grid(column=0, row=0)#, columnspan=2)
@@ -93,7 +99,7 @@ class TrennkarteErstellen:
         """destop_name.grid(column=0, row=3)
         date_time.grid(column=0, row=4)
         last_update.grid(column=0, row=5)"""
-        self.destop_name.grid(column=0, row=0)
+        self.destop_name.grid(column=0, row=0, padx=10, pady=(10))
         self.date_time.grid(column=1, row=0)
         self.last_update.grid(column=0, row=2)
 
@@ -206,6 +212,9 @@ class TrennkarteErstellen:
         barcode_value = self.kunde_nummer.get().strip()
         print(f"DEBUG: Scanned barcode value: '{barcode_value}', type: {type(barcode_value)}")
         self.kunde_nummer.delete(0, tk.END)
+        current_time = datetime.now()
+
+        self.date_time.config(text=current_time.strftime("%d.%m.%Y \n%H:%M:%S"))
         
         if not barcode_value:
             self.status_label.config(text="Please scan a barcode")
