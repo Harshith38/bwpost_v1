@@ -68,7 +68,9 @@ class TrennkarteErstellen:
         # Status message
         #self.status_frame = ttk.Frame(self.frame1)
         #status_frame.pack(fill="x", padx=5, pady=5)
-        self.status_label = ttk.Label(self.frame1, text="Ready to scan", font=("Arial", 10))
+        self.status_label = ttk.Label(self.frame1, text="Ready to scan", background="light green",
+                                      font=("Arial", 10),
+                                      wraplength=200)
         self.status_label.grid(column=0, row=0,pady=20)
         #self.status_label.pack(side=tk.LEFT, padx=10)
     
@@ -97,24 +99,37 @@ class TrennkarteErstellen:
 
         self.content2= ttk.Frame(self.root, style='My.TFrame')
         self.frame2 = ttk.Frame(self.content2, borderwidth=5, relief="ridge", width=600, height = 260)
-         # Current customer
+        
+        #maintaing frame size
+        self.frame2.grid_propagate(False)
+        
+        # Current customer
         current_frame = ttk.Frame(self.frame2)
         current_frame.grid(column=0, row=0)
         #current_frame.pack(fill="x", padx=5, pady=5)
-        #current_customer = ttk.Label(current_frame, text="Current Customer:", font=("Arial", 12, "bold"))#.pack(side=tk.LEFT)
-        #current_customer.grid(column=0, row=0)
-        self.current_customer_label = ttk.Label(current_frame, text="None", font=("Arial", 12, "bold"))
-        self.current_customer_label.grid(column=1, row=0)
+        #self.current_customer_nummer = ttk.Label(current_frame, text="0000", font=("Roboto Mono", 12, "bold"), anchor= "w")#.pack(side=tk.LEFT)
+        #self.current_customer_nummer.grid(column=0, row=0)
+        self.current_customer_label = ttk.Label(current_frame, text="None",
+                                                font=("Roboto Mono", 14, "bold"),
+                                                wraplength=550,
+                                                width=50, 
+                                                anchor= "w")
+        
+        self.current_customer_label.grid(column=0, row=1)
         #self.current_customer_label.pack(side=tk.LEFT, padx=10)
         
         # Previous customer
         previous_frame = ttk.Frame(self.frame2)
         previous_frame.grid(column=0, row=1)
         #previous_frame.pack(fill="x", padx=5, pady=5)
-        #previous_customer = ttk.Label(previous_frame, text="Previous Customer:", font=("Arial", 12))#.pack(side=tk.LEFT)
-        #previous_customer.grid(column=0, row=1)
-        self.previous_customer_label = ttk.Label(previous_frame, text="None", font=("Arial", 12))
-        self.previous_customer_label.grid(column=1, row=1, pady=30)
+        #self.previous_customer_nummer = ttk.Label(previous_frame, text="0000", font=("Arial", 12), anchor="w")#.pack(side=tk.LEFT)
+        #self.previous_customer_nummer.grid(column=0, row=1)
+        self.previous_customer_label = ttk.Label(previous_frame, text="None",
+                                                font=("Roboto Mono", 12),
+                                                wraplength=400,
+                                                width=60, 
+                                                anchor= "w")
+        self.previous_customer_label.grid(column=0, row=2, pady=30)
         #self.previous_customer_label.pack(side=tk.LEFT, padx=10)
 
 
@@ -184,7 +199,9 @@ class TrennkarteErstellen:
                     self.previous_customer_label.config(text=self.previous_customer)
                 
                 # Update current customer
+                #self.current_customer_num = customer_match.iloc[0]['ID']
                 self.current_customer = customer_match.iloc[0]['CustomerName']
+                #self.current_customer_nummer.config(text=self.current_customer_num)
                 self.current_customer_label.config(text=self.current_customer)
                 
                 # Print label
@@ -193,6 +210,8 @@ class TrennkarteErstellen:
                 # Enable verification mode
                 self.verification_mode = True
                 self.status_label.config(text="Scan the printed label to verify")
+                self.status_label.config(background="Yellow")
+                self.status_label.config(foreground="black")
             else:
                 self.status_label.config(text=f"No customer found for barcode: {barcode_value}")
         else:
@@ -207,9 +226,13 @@ class TrennkarteErstellen:
                 verified_customer = customer_match.iloc[0]['CustomerName']
                 if verified_customer == self.current_customer:
                     self.status_label.config(text="Verification successful! Ready for next scan.")
+                    self.status_label.config(background="Green")
+                    self.status_label.config(foreground="White")
                     self.verification_mode = False
                 else:
                     self.status_label.config(text="Verification failed! Customer mismatch.")
+                    self.status_label.config(background="Red")
+                    self.status_label.config(foreground="White")
             else:
                 self.status_label.config(text=f"No customer found for barcode: {barcode_value}")
         else:
