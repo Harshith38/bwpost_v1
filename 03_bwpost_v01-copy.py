@@ -68,7 +68,7 @@ class TrennkarteErstellen:
         # Status message
         #self.status_frame = ttk.Frame(self.frame1)
         #status_frame.pack(fill="x", padx=5, pady=5)
-        self.status_label = ttk.Label(self.frame1, text="Ready to scan", 
+        self.status_label = ttk.Label(self.frame1, text="Ready to scan", background="light green",
                                       font=("Arial", 10),
                                       wraplength=200)
         self.status_label.grid(column=0, row=0,pady=20)
@@ -129,7 +129,7 @@ class TrennkarteErstellen:
                                                 wraplength=400,
                                                 width=60, 
                                                 anchor= "w")
-        self.previous_customer_label.grid(column=1, row=1, pady=30)
+        self.previous_customer_label.grid(column=0, row=2, pady=30)
         #self.previous_customer_label.pack(side=tk.LEFT, padx=10)
 
 
@@ -210,6 +210,8 @@ class TrennkarteErstellen:
                 # Enable verification mode
                 self.verification_mode = True
                 self.status_label.config(text="Scan the printed label to verify")
+                self.status_label.config(background="Yellow")
+                self.status_label.config(foreground="black")
             else:
                 self.status_label.config(text=f"No customer found for barcode: {barcode_value}")
         else:
@@ -224,9 +226,13 @@ class TrennkarteErstellen:
                 verified_customer = customer_match.iloc[0]['CustomerName']
                 if verified_customer == self.current_customer:
                     self.status_label.config(text="Verification successful! Ready for next scan.")
+                    self.status_label.config(background="Green")
+                    self.status_label.config(foreground="White")
                     self.verification_mode = False
                 else:
                     self.status_label.config(text="Verification failed! Customer mismatch.")
+                    self.status_label.config(background="Red")
+                    self.status_label.config(foreground="White")
             else:
                 self.status_label.config(text=f"No customer found for barcode: {barcode_value}")
         else:
