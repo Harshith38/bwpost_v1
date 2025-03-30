@@ -18,6 +18,9 @@ class TrennkarteErstellen:
         self.kunde_data = None
         self.current_customer= None
         self.previous_customer=None
+        self.current_customer_number = None
+        self.previous_customer_number = None
+
 
 
         self.kundendaten_laden()
@@ -102,7 +105,31 @@ class TrennkarteErstellen:
         
         #maintaing frame size
         self.frame2.grid_propagate(False)
-        
+
+        # Current customer section
+        self.current_customer_number_label = ttk.Label(self.frame2, text="0000", 
+                                                font=("Roboto Mono", 14, "bold"), 
+                                                anchor="w")
+        self.current_customer_number_label.grid(column=0, row=0, sticky="w", padx=10, pady=(10, 0))
+
+        self.current_customer_label = ttk.Label(self.frame2, text="None",
+                                                font=("Roboto Mono", 14, "bold"),
+                                                wraplength=550,
+                                                anchor="w")
+        self.current_customer_label.grid(column=0, row=1, sticky="w", padx=10, pady=(0, 35))
+
+        # Previous customer section
+        self.previous_customer_number_label = ttk.Label(self.frame2, text="", 
+                                                font=("Roboto Mono", 12), 
+                                                anchor="w")
+        self.previous_customer_number_label.grid(column=0, row=2, sticky="w", padx=10, pady=(10, 0))
+
+        self.previous_customer_label = ttk.Label(self.frame2, text="",
+                                                font=("Roboto Mono", 12),
+                                                wraplength=550,
+                                                anchor="w")
+        self.previous_customer_label.grid(column=0, row=3, sticky="w", padx=10, pady=(0, 15))
+        """
         # Current customer
         current_frame = ttk.Frame(self.frame2)
         current_frame.grid(column=0, row=0)
@@ -131,7 +158,7 @@ class TrennkarteErstellen:
                                                 anchor= "w")
         self.previous_customer_label.grid(column=0, row=2, pady=30)
         #self.previous_customer_label.pack(side=tk.LEFT, padx=10)
-
+"""
 
         self.ok = ttk.Button(self.content2, text="OK", command=self.process_scan, padding=(20))
 
@@ -195,13 +222,15 @@ class TrennkarteErstellen:
             if not customer_match.empty:
                 # Update previous customer
                 if self.current_customer:
+                    self.previous_customer_num = self.current_customer_number
+                    self.previous_customer_number_label.config(text=self.previous_customer_num)
                     self.previous_customer = self.current_customer
                     self.previous_customer_label.config(text=self.previous_customer)
                 
                 # Update current customer
-                #self.current_customer_num = customer_match.iloc[0]['ID']
+                self.current_customer_number = customer_match.iloc[0]['ID']
                 self.current_customer = customer_match.iloc[0]['CustomerName']
-                #self.current_customer_nummer.config(text=self.current_customer_num)
+                self.current_customer_number_label.config(text=self.current_customer_number)
                 self.current_customer_label.config(text=self.current_customer)
                 
                 # Print label
